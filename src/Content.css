@@ -1,0 +1,84 @@
+
+.intro-heading {
+    position: absolute;
+    display:flex;
+    align-items: center;
+    top: 50%;
+  }
+  
+  .presentation {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 80vh;
+    align-items: center;
+    
+  }
+  
+  .introduction {
+    flex: 2;
+  }
+  
+  .intro-text h1  {
+    font-size: 44px;
+    font-weight: 500;
+    background: linear-gradient(to right,#494964,#6f6f89);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .intro-text p {
+    margin-top: 5px;
+    font-size: 22px;
+    color: #585722
+  }
+  
+  .cta {
+    padding: 50px 0px 0px 0px;
+  }
+  
+  .cta-select {
+    border: 2px solid lightskyblue;
+    background: transparent;
+    color: lightskyblue;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .cta-add {
+    background: lightskyblue;
+    border: none;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    margin: 30px 0px 0px 30px;
+  }
+  
+  
+  .banner {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: drop 1.5s ease;
+  }
+  
+  .banner img {
+    height: 60vh;
+    filter: drop-shadow(0px 5px 3px black);
+  }
+  
+  @keyframes drop {
+    0% {
+      opacity: 0;
+      transform: translateY(-80px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
